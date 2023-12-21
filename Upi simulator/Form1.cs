@@ -16,11 +16,9 @@ namespace Upi_simulator
         public Form1()
         {
             InitializeComponent();
-            {
-                InitializeComponent();
-            }
+
         }
-        int seconds = 0;
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -39,10 +37,11 @@ namespace Upi_simulator
 
         private void kela_selvennys_nappi_Click(object sender, EventArgs e)
         {
-            // AVAA VIDEO SOITTIMEN
-            Video_Player video_Player = new Video_Player();
-            video_Player.ShowDialog();
-            timer1.Start();
+            kela_selvennys_nappi.Enabled = false;
+
+            Video_Player video_Player = new Video_Player(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Kela.mp4", this);
+            video_Player.Show();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -50,16 +49,13 @@ namespace Upi_simulator
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void hanki_juomat_nappi_Click(object sender, EventArgs e)
         {
-            seconds += 1;
-            if (seconds == 39)
-            {
-                kela_selvennys_nappi.Enabled = false;
-                timer1.Enabled = false;
-
-               
-            }
+            hanki_juomat_nappi.Enabled = false;
+            MessageBox.Show("Olet spuge eikä sinulla ole rahaa. Päätät piilottaa juomia kaikkiin taskuihisi.");
+            Video_Player video_Player = new Video_Player(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Juomat.mp4", @"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Pizza_start.mp4");
+            video_Player.Show();
+           
         }
     }
 }
