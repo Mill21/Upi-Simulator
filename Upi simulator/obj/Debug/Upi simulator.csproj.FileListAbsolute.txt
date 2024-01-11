@@ -13,4 +13,7 @@ C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\bin\Debug\AxInterop.W
 C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Interop.WMPLib.dll
 C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\AxInterop.WMPLib.dll
 C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi simulator.csproj.ResolveComReference.cache
-C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi_simulator.Video_Player.resources
+C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi_simulator.Form2.resources
+C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi_simulator.Form3.resources
+C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi_simulator.startup.resources
+C:\Users\s3kuel01\source\repos\Upi simulator\Upi simulator\obj\Debug\Upi_simulator.Form5.resources

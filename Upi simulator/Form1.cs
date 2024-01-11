@@ -24,10 +24,15 @@ namespace Upi_simulator
         {
 
         }
-
+        //start button
         private void button3_Click(object sender, EventArgs e)
         {
 
+            Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault() ?? new Form3();
+            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Hökäle start.mp4", this);
+            form3.Show();
+            video_Player.Show();
+            this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -39,8 +44,12 @@ namespace Upi_simulator
         {
             kela_selvennys_nappi.Enabled = false;
 
-            Video_Player video_Player = new Video_Player(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Kela.mp4", this);
+            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Kela.mp4", this);
             video_Player.Show();
+            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            {
+                start.Enabled = true;
+            }
 
         }
 
@@ -53,9 +62,27 @@ namespace Upi_simulator
         {
             hanki_juomat_nappi.Enabled = false;
             MessageBox.Show("Olet spuge eikä sinulla ole rahaa. Päätät piilottaa juomia kaikkiin taskuihisi.");
-            Video_Player video_Player = new Video_Player(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Juomat.mp4", @"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Pizza_start.mp4");
+            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Juomat.mp4");
             video_Player.Show();
-           
+            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            {
+                start.Enabled = true;
+            }
+
+
+
+        }
+
+        private void pizza_nappi_Click(object sender, EventArgs e)
+        {
+            pizza_nappi.Enabled = false;
+            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Upi löytää pizzan.mp4");
+            video_Player.Show();
+            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            {
+                start.Enabled = true;
+            }
+
         }
     }
 }

@@ -10,16 +10,13 @@ using System.Windows.Forms;
 
 namespace Upi_simulator
 {
-    public partial class Video_Player : Form
+    public partial class Form2 : Form
     {
-        private bool messageBoxShown = false;
+        
         private Form1 parentForm;
         private int fixedHeight = 490;
         private int fixedWidth = 815;
-        private bool firstoVideoEnded = false;
-        private string secondVideoPath;
-
-        public Video_Player(string videoPath, string firstvideopath, string secoundvideopath, Form1 parentForm)
+        public Form2(string videoPath, Form1 parentForm=null)
         {
             InitializeComponent();
 
@@ -47,13 +44,6 @@ namespace Upi_simulator
                 
                 axWindowsMediaPlayer1.Ctlcontrols.stop();
                 axWindowsMediaPlayer1.close();
-
-
-                if (!messageBoxShown)
-                {
-                    MessageBox.Show("Video has ended!");
-                    messageBoxShown = true; 
-                }
                 this.Close();
             }
         }

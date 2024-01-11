@@ -35,6 +35,7 @@
             this.textbox1 = new System.Windows.Forms.TextBox();
             this.start = new System.Windows.Forms.Button();
             this.title = new System.Windows.Forms.Label();
+            this.pizza_nappi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             // start
             // 
             this.start.Enabled = false;
-            this.start.Location = new System.Drawing.Point(285, 176);
+            this.start.Location = new System.Drawing.Point(285, 250);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(140, 68);
             this.start.TabIndex = 4;
@@ -100,17 +101,31 @@
             this.title.Text = "ÄIJIEN ILTA SIMULATOR";
             this.title.Click += new System.EventHandler(this.label1_Click);
             // 
+            // pizza_nappi
+            // 
+            this.pizza_nappi.Location = new System.Drawing.Point(285, 176);
+            this.pizza_nappi.Name = "pizza_nappi";
+            this.pizza_nappi.Size = new System.Drawing.Size(140, 68);
+            this.pizza_nappi.TabIndex = 6;
+            this.pizza_nappi.Text = "Hae ruuat";
+            this.pizza_nappi.UseVisualStyleBackColor = true;
+            this.pizza_nappi.Click += new System.EventHandler(this.pizza_nappi_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 467);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pizza_nappi);
             this.Controls.Add(this.title);
             this.Controls.Add(this.start);
             this.Controls.Add(this.textbox1);
             this.Controls.Add(this.kela_selvennys_nappi);
             this.Controls.Add(this.hanki_juomat_nappi);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(816, 489);
+            this.MinimumSize = new System.Drawing.Size(816, 489);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -129,6 +144,7 @@
         private System.Windows.Forms.TextBox textbox1;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Label title;
+        private System.Windows.Forms.Button pizza_nappi;
     }
 }
 
