@@ -27,7 +27,38 @@ Tältä näyttää kun olet painanut kaikkia kolmea nappia ja neljäs "Aloita ä
 Tältä näyttää kun painat "Aloita äijien ilta" nappia.
 ![after start](https://github.com/Mill21/Upi-Simulator/assets/151001800/3b4806cf-71d3-43fe-96de-3bade82b1feb)
 
-Tältä näyttää kun olet katsonut "Äijien ilta käyntiin
+Tältä näyttää kun olet katsonut "Äijien ilta käyntiin" videon.
+![form2](https://github.com/Mill21/Upi-Simulator/assets/151001800/7939e7fe-3f7f-4db7-97dd-400295801365)
+
+Tältä näyttää kun painat "Sytytä "Juhannus" kokko" nappia.
+![juhannus](https://github.com/Mill21/Upi-Simulator/assets/151001800/431677d9-835a-4313-a595-cda26b2a9838)
+
+Tältä näyttää kun painat "Sytytä tupakka" nappia.
+![tupakki](https://github.com/Mill21/Upi-Simulator/assets/151001800/daa3a43c-cacc-42b4-86d4-e2b9e8e45802)
+
+Tältä näyttää kun painat "Käy kusella" nappia.
+![peepee](https://github.com/Mill21/Upi-Simulator/assets/151001800/141806cf-5b68-4d0d-a9d8-a3377eda4509)
+
+Tältä näyttää kun painat "Upi kertoo unelma kumppanista" nappia.
+![emanta](https://github.com/Mill21/Upi-Simulator/assets/151001800/34d2db86-f05f-4553-bf63-5d97c6adb7a3)
+
+Tältä näyttää kun painat "Nouse tuolille" nappia.
+![tuoli](https://github.com/Mill21/Upi-Simulator/assets/151001800/6366983a-3da7-44bb-b142-09054be99495)
+
+Tältä näyttää kun painat "Kerro ideaali maailmanloppusi" nappia.
+![maailmanloppu](https://github.com/Mill21/Upi-Simulator/assets/151001800/6e0ca76b-11d1-4412-9833-88692c6aaf4f)
+
+Tältä näyttää kun olet pelannut pelin läpi
+![Loppu](https://github.com/Mill21/Upi-Simulator/assets/151001800/f6e0259b-0049-4615-8154-97fb4e491a17)
+
+
+
+
+
+
+
+
+
 
 
 
