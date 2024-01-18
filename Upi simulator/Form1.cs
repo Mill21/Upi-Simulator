@@ -13,6 +13,7 @@ namespace Upi_simulator
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -20,35 +21,40 @@ namespace Upi_simulator
         }
 
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void TextBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
         //start button
-        private void button3_Click(object sender, EventArgs e)
+        private void Button3_Click(object sender, EventArgs e)
         {
 
             Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault() ?? new Form3();
-            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Hökäle start.mp4", this);
+            Form2 video_Player = new Form2(@"Videot\Hökäle start.mp4", this);
             form3.Show();
             video_Player.Show();
             this.Hide();
+            
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void Label1_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void kela_selvennys_nappi_Click(object sender, EventArgs e)
+        private void Kela_selvennys_nappi_Click(object sender, EventArgs e)
         {
-            kela_selvennys_nappi.Enabled = false;
+            kela_button.Enabled = false;
 
-            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Kela.mp4", this);
+            Form2 video_Player = new Form2(@"Videot\Kela.mp4", this);
             video_Player.Show();
-            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            if (kela_button.Enabled == false && Drink_button.Enabled == false && Pizza_button.Enabled == false)
             {
-                start.Enabled = true;
+                Start_button.Enabled = true;
+                if (Application.OpenForms["Form4"] != null)
+                {
+                    Application.OpenForms["Form4"].Close();
+                }
             }
 
         }
@@ -58,30 +64,35 @@ namespace Upi_simulator
 
         }
 
-        private void hanki_juomat_nappi_Click(object sender, EventArgs e)
+        private void Hanki_juomat_nappi_Click(object sender, EventArgs e)
         {
-            hanki_juomat_nappi.Enabled = false;
+            Drink_button.Enabled = false;
             MessageBox.Show("Olet spuge eikä sinulla ole rahaa. Päätät piilottaa juomia kaikkiin taskuihisi.");
-            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Juomat.mp4");
+            Form2 video_Player = new Form2(@"Videot\Juomat.mp4");
             video_Player.Show();
-            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            if (kela_button.Enabled == false && Drink_button.Enabled == false && Pizza_button.Enabled == false)
             {
-                start.Enabled = true;
+                Start_button.Enabled = true;
             }
 
 
 
         }
 
-        private void pizza_nappi_Click(object sender, EventArgs e)
+        private void Pizza_nappi_Click(object sender, EventArgs e)
         {
-            pizza_nappi.Enabled = false;
-            Form2 video_Player = new Form2(@"C:\Users\s3kuel01\source\repos\Upi simulator\Videot\Upi löytää pizzan.mp4");
+            Pizza_button.Enabled = false;
+            Form2 video_Player = new Form2(@"Videot\Upi löytää pizzan.mp4");
             video_Player.Show();
-            if (kela_selvennys_nappi.Enabled == false && hanki_juomat_nappi.Enabled == false && pizza_nappi.Enabled == false)
+            if (kela_button.Enabled == false && Drink_button.Enabled == false && Pizza_button.Enabled == false)
             {
-                start.Enabled = true;
+                Start_button.Enabled = true;
             }
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

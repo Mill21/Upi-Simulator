@@ -12,19 +12,36 @@ namespace Upi_simulator
 {
     public partial class Form5 : Form
     {
+       
         public Form5()
         {
             InitializeComponent();
+            Stop_button.Click += Button1_Click;
+
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void PictureBox2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            List<Form> formsToClose = new List<Form>();
+
+            
+            foreach (Form form in Application.OpenForms)
+            {
+                
+                
+                    formsToClose.Add(form);
+                
+            }
+            foreach (Form form in formsToClose)
+            {
+                form.Visible = true;  
+                form.Close();
+            }
         }
     }
 }

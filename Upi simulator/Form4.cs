@@ -10,18 +10,23 @@ using System.Windows.Forms;
 
 namespace Upi_simulator
 {
-    public partial class startup : Form
+    public partial class Startup : Form
     {
-        public startup()
+        public Startup()
         {
             InitializeComponent();
         }
 
-        private void startup_nappi_Click(object sender, EventArgs e)
+        private void Startup_nappi_Click(object sender, EventArgs e)
         {
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault() ?? new Form1();
             form1.Show();
             this.Hide();
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

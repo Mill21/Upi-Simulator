@@ -29,100 +29,101 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.kela_selvennys_nappi = new System.Windows.Forms.Button();
-            this.hanki_juomat_nappi = new System.Windows.Forms.Button();
-            this.textbox1 = new System.Windows.Forms.TextBox();
-            this.start = new System.Windows.Forms.Button();
-            this.title = new System.Windows.Forms.Label();
-            this.pizza_nappi = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PictureBox1 = new System.Windows.Forms.PictureBox();
+            this.kela_button = new System.Windows.Forms.Button();
+            this.Drink_button = new System.Windows.Forms.Button();
+            this.Textbox1 = new System.Windows.Forms.TextBox();
+            this.Start_button = new System.Windows.Forms.Button();
+            this.Title = new System.Windows.Forms.Label();
+            this.Pizza_button = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // PictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, 28);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(283, 437);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox1.Image")));
+            this.PictureBox1.Location = new System.Drawing.Point(-4, 28);
+            this.PictureBox1.Name = "PictureBox1";
+            this.PictureBox1.Size = new System.Drawing.Size(283, 437);
+            this.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox1.TabIndex = 0;
+            this.PictureBox1.TabStop = false;
+            this.PictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // kela_selvennys_nappi
+            // kela_button
             // 
-            this.kela_selvennys_nappi.Location = new System.Drawing.Point(285, 28);
-            this.kela_selvennys_nappi.Name = "kela_selvennys_nappi";
-            this.kela_selvennys_nappi.Size = new System.Drawing.Size(140, 68);
-            this.kela_selvennys_nappi.TabIndex = 1;
-            this.kela_selvennys_nappi.Text = "Kirjoita Selvennys Kelalle";
-            this.kela_selvennys_nappi.UseVisualStyleBackColor = true;
-            this.kela_selvennys_nappi.Click += new System.EventHandler(this.kela_selvennys_nappi_Click);
+            this.kela_button.Location = new System.Drawing.Point(285, 28);
+            this.kela_button.Name = "kela_button";
+            this.kela_button.Size = new System.Drawing.Size(140, 68);
+            this.kela_button.TabIndex = 1;
+            this.kela_button.Text = "Kirjoita Selvennys Kelalle";
+            this.kela_button.UseVisualStyleBackColor = true;
+            this.kela_button.Click += new System.EventHandler(this.Kela_selvennys_nappi_Click);
             // 
-            // hanki_juomat_nappi
+            // Drink_button
             // 
-            this.hanki_juomat_nappi.Location = new System.Drawing.Point(285, 102);
-            this.hanki_juomat_nappi.Name = "hanki_juomat_nappi";
-            this.hanki_juomat_nappi.Size = new System.Drawing.Size(140, 68);
-            this.hanki_juomat_nappi.TabIndex = 2;
-            this.hanki_juomat_nappi.Text = "Hanki juomat";
-            this.hanki_juomat_nappi.UseVisualStyleBackColor = true;
-            this.hanki_juomat_nappi.Click += new System.EventHandler(this.hanki_juomat_nappi_Click);
+            this.Drink_button.Location = new System.Drawing.Point(285, 102);
+            this.Drink_button.Name = "Drink_button";
+            this.Drink_button.Size = new System.Drawing.Size(140, 68);
+            this.Drink_button.TabIndex = 2;
+            this.Drink_button.Text = "Hanki juomat";
+            this.Drink_button.UseVisualStyleBackColor = true;
+            this.Drink_button.Click += new System.EventHandler(this.Hanki_juomat_nappi_Click);
             // 
-            // textbox1
+            // Textbox1
             // 
-            this.textbox1.Location = new System.Drawing.Point(453, 28);
-            this.textbox1.MaximumSize = new System.Drawing.Size(5000, 5000);
-            this.textbox1.Multiline = true;
-            this.textbox1.Name = "textbox1";
-            this.textbox1.ReadOnly = true;
-            this.textbox1.Size = new System.Drawing.Size(337, 427);
-            this.textbox1.TabIndex = 3;
-            this.textbox1.Text = "TERVETULOA ÄIJIEN ILTA SIMULAATTORIIN!\r\nValmistele ennen äijien iltaa\r\n\r\n";
-            this.textbox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.Textbox1.Location = new System.Drawing.Point(453, 28);
+            this.Textbox1.MaximumSize = new System.Drawing.Size(5000, 5000);
+            this.Textbox1.Multiline = true;
+            this.Textbox1.Name = "Textbox1";
+            this.Textbox1.ReadOnly = true;
+            this.Textbox1.Size = new System.Drawing.Size(337, 427);
+            this.Textbox1.TabIndex = 3;
+            this.Textbox1.Text = "TERVETULOA ÄIJIEN ILTA SIMULAATTORIIN!\r\nValmistele ennen äijien iltaa\r\n\r\n";
+            this.Textbox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // start
+            // Start_button
             // 
-            this.start.Enabled = false;
-            this.start.Location = new System.Drawing.Point(285, 250);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(140, 68);
-            this.start.TabIndex = 4;
-            this.start.Text = "Aloita Äijien Ilta";
-            this.start.UseVisualStyleBackColor = true;
-            this.start.Click += new System.EventHandler(this.button3_Click);
+            this.Start_button.Enabled = false;
+            this.Start_button.Location = new System.Drawing.Point(285, 250);
+            this.Start_button.Name = "Start_button";
+            this.Start_button.Size = new System.Drawing.Size(140, 68);
+            this.Start_button.TabIndex = 4;
+            this.Start_button.Text = "Aloita Äijien Ilta";
+            this.Start_button.UseVisualStyleBackColor = true;
+            this.Start_button.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // title
+            // Title
             // 
-            this.title.Location = new System.Drawing.Point(71, 9);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(134, 16);
-            this.title.TabIndex = 5;
-            this.title.Text = "ÄIJIEN ILTA SIMULATOR";
-            this.title.Click += new System.EventHandler(this.label1_Click);
+            this.Title.Location = new System.Drawing.Point(71, 9);
+            this.Title.Name = "Title";
+            this.Title.Size = new System.Drawing.Size(134, 16);
+            this.Title.TabIndex = 5;
+            this.Title.Text = "ÄIJIEN ILTA SIMULATOR";
+            this.Title.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // pizza_nappi
+            // Pizza_button
             // 
-            this.pizza_nappi.Location = new System.Drawing.Point(285, 176);
-            this.pizza_nappi.Name = "pizza_nappi";
-            this.pizza_nappi.Size = new System.Drawing.Size(140, 68);
-            this.pizza_nappi.TabIndex = 6;
-            this.pizza_nappi.Text = "Hae ruuat";
-            this.pizza_nappi.UseVisualStyleBackColor = true;
-            this.pizza_nappi.Click += new System.EventHandler(this.pizza_nappi_Click);
+            this.Pizza_button.Location = new System.Drawing.Point(285, 176);
+            this.Pizza_button.Name = "Pizza_button";
+            this.Pizza_button.Size = new System.Drawing.Size(140, 68);
+            this.Pizza_button.TabIndex = 6;
+            this.Pizza_button.Text = "Hae ruuat";
+            this.Pizza_button.UseVisualStyleBackColor = true;
+            this.Pizza_button.Click += new System.EventHandler(this.Pizza_nappi_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pizza_nappi);
-            this.Controls.Add(this.title);
-            this.Controls.Add(this.start);
-            this.Controls.Add(this.textbox1);
-            this.Controls.Add(this.kela_selvennys_nappi);
-            this.Controls.Add(this.hanki_juomat_nappi);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Pizza_button);
+            this.Controls.Add(this.Title);
+            this.Controls.Add(this.Start_button);
+            this.Controls.Add(this.Textbox1);
+            this.Controls.Add(this.kela_button);
+            this.Controls.Add(this.Drink_button);
+            this.Controls.Add(this.PictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
@@ -130,7 +131,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,13 +139,13 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button kela_selvennys_nappi;
-        private System.Windows.Forms.Button hanki_juomat_nappi;
-        private System.Windows.Forms.TextBox textbox1;
-        private System.Windows.Forms.Button start;
-        private System.Windows.Forms.Label title;
-        private System.Windows.Forms.Button pizza_nappi;
+        private System.Windows.Forms.PictureBox PictureBox1;
+        private System.Windows.Forms.Button kela_button;
+        private System.Windows.Forms.Button Drink_button;
+        private System.Windows.Forms.TextBox Textbox1;
+        private System.Windows.Forms.Button Start_button;
+        private System.Windows.Forms.Label Title;
+        private System.Windows.Forms.Button Pizza_button;
     }
 }
 

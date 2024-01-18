@@ -13,9 +13,9 @@ namespace Upi_simulator
     public partial class Form2 : Form
     {
         
-        private Form1 parentForm;
-        private int fixedHeight = 490;
-        private int fixedWidth = 815;
+        private readonly Form1 parentForm;
+        private readonly int fixedHeight = 490;
+        private readonly int fixedWidth = 815;
         public Form2(string videoPath, Form1 parentForm=null)
         {
             InitializeComponent();
@@ -54,7 +54,7 @@ namespace Upi_simulator
         }
 
 
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        private void AxWindowsMediaPlayer1_Enter(object sender, EventArgs e)
         {
            
         }

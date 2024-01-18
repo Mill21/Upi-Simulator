@@ -16,7 +16,7 @@ namespace Upi_simulator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new startup());
+            Application.Run(new Startup());
         }
     }
 }
