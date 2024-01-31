@@ -53,8 +53,20 @@ Tältä näyttää kun olet pelannut pelin läpi
 
 Sneak Peak Koodiin
 
-Tässä on yleisin nappi pelissä ja suurin osa pelin napeista toimii näin.
+Tämä on aloitus sivun ainut nappi, joka avaa Äijien ilta prep sivun ja piilottaa sitten itsensä.
+
 ``` C#
+private void Startup_nappi_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault() ?? new Form1();
+            form1.Show();
+            this.Hide();
+        }
+```
+Tässä on yleisin nappi pelissä ja suurin osa pelin napeista toimii näin. 
+
+``` C#
+
 kela_button.Enabled = false;
 
             Form2 video_Player = new Form2(@"Videot\Kela.mp4", this);
@@ -68,6 +80,82 @@ kela_button.Enabled = false;
                 }
             }
 
+        }
+```
+
+Tässä on vähän erinlainen nappi yleisistä. Tässä napissa tulee textbox ennen videota. Tämä on yksi Äijien ilta prep sivun napeista katsoo onko kaikki kolme nappia suoritettu jolloin start nappi aukeaa.
+
+``` C#
+private void Hanki_juomat_nappi_Click(object sender, EventArgs e)
+        {
+            Drink_button.Enabled = false;
+            MessageBox.Show("Olet spuge eikä sinulla ole rahaa. Päätät piilottaa juomia kaikkiin taskuihisi.");
+            Form2 video_Player = new Form2(@"Videot\Juomat.mp4");
+            video_Player.Show();
+            if (kela_button.Enabled == false && Drink_button.Enabled == false && Pizza_button.Enabled == false)
+            {
+                Start_button.Enabled = true;
+            }
+
+
+
+        }
+```
+
+Tässä on nappi joka aukeaa Äijien ilta prep sivulla, kun kaikki kolme nappia on painettu.
+
+``` C#
+ private void Button3_Click(object sender, EventArgs e)
+        {
+
+            Form3 form3 = Application.OpenForms.OfType<Form3>().FirstOrDefault() ?? new Form3();
+            Form2 video_Player = new Form2(@"Videot\Hökäle start.mp4", this);
+            form3.Show();
+            video_Player.Show();
+            this.Close();
+            
+        }
+```
+
+Tässä on yksi Äijien ilta sivun napeista. Tämä toimii samalla tavalla, kun prep sivun kolme ensimmäistä nappia.
+
+``` C#
+ private void Juhannus_nappi_Click(object sender, EventArgs e)
+        {
+            Midsummer_button.Enabled = false;
+
+            Form2 video_Player = new Form2(@"Videot\Juhannus.mp4");
+            video_Player.Show();
+            if (Midsummer_button.Enabled == false && Microwawe_button.Enabled == false && Pee_button.Enabled == false && Woman_button.Enabled == false && Chair_button.Enabled == false && Gameover_button.Enabled == false)
+            {
+                Form5 form5 = Application.OpenForms.OfType<Form5>().FirstOrDefault() ?? new Form5();
+                this.Hide();
+                form5.Show();
+                
+            }
+        }
+```
+
+Tämä nappi on pelin viimeisellä sivulla, joka antaa sinun sulkea kaikki sivut ja lopettaa pelin.
+
+``` C#
+private void Button1_Click(object sender, EventArgs e)
+        {
+            List<Form> formsToClose = new List<Form>();
+
+            
+            foreach (Form form in Application.OpenForms)
+            {
+                
+                
+                    formsToClose.Add(form);
+                
+            }
+            foreach (Form form in formsToClose)
+            {
+                form.Visible = true;  
+                form.Close();
+            }
         }
 ```
 
