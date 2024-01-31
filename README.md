@@ -51,6 +51,25 @@ Tältä näyttää kun painat "Kerro ideaali maailmanloppusi" nappia.
 Tältä näyttää kun olet pelannut pelin läpi
 ![Loppu](https://github.com/Mill21/Upi-Simulator/assets/151001800/f6e0259b-0049-4615-8154-97fb4e491a17)
 
+Sneak Peak Koodiin
+
+Tässä on yleisin nappi pelissä ja suurin osa pelin napeista toimii näin.
+``` C#
+kela_button.Enabled = false;
+
+            Form2 video_Player = new Form2(@"Videot\Kela.mp4", this);
+            video_Player.Show();
+            if (kela_button.Enabled == false && Drink_button.Enabled == false && Pizza_button.Enabled == false)
+            {
+                Start_button.Enabled = true;
+                if (Application.OpenForms["Form4"] != null)
+                {
+                    Application.OpenForms["Form4"].Close();
+                }
+            }
+
+        }
+```
 
 
 
