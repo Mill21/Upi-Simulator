@@ -67,7 +67,7 @@ Tältä näyttää kun olet pelannut pelin läpi.
 ![Loppu](https://github.com/Mill21/Upi-Simulator/assets/151001800/f6e0259b-0049-4615-8154-97fb4e491a17)
 
 
-##Sneak Peak Koodiin
+## Sneak Peak Koodiin
 
 Tämä on aloitus sivun ainut nappi, joka avaa Äijien ilta prep sivun ja piilottaa sitten itsensä.
 
@@ -174,6 +174,16 @@ private void Button1_Click(object sender, EventArgs e)
             }
         }
 ```
+
+## Jatkokehitys ideat
+
+-Enemmän syvemmän peli kokemuksen
+-Ulkoasun kehitys
+-Koodin siivoamista
+
+## Coming someday
+
+Aijon tehdä Unityllä jonkun näköisen Upi Simulator pelin, kun minulla on enemmän ohjelmointi kokemusta. Mietin vähän platformer kaltaista peliä tai 3d kauhu peliä.
 
 
 
