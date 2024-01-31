@@ -177,9 +177,9 @@ private void Button1_Click(object sender, EventArgs e)
 
 ## Jatkokehitys ideat
 
--Enemmän syvemmän peli kokemuksen
--Ulkoasun kehitys
--Koodin siivoamista
+- Enemmän syvemmän peli kokemuksen
+- Ulkoasun kehitys
+- Koodin siivoamista
 
 ## Coming someday
 
