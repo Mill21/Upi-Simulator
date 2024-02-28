@@ -104,5 +104,10 @@ namespace Upi_simulator
             Form2 video_Player = new Form2(@"Videot\Maailmanloppu.mp4");
             video_Player.Show();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

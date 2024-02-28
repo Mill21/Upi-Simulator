@@ -58,7 +58,7 @@
             this.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox2.TabIndex = 1;
             this.PictureBox2.TabStop = false;
-            this.PictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
+            //this.PictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // PictureBox3
             // 

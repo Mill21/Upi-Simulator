@@ -33,7 +33,7 @@ namespace Upi_simulator
             Form2 video_Player = new Form2(@"Videot\Hökäle start.mp4", this);
             form3.Show();
             video_Player.Show();
-            this.Hide();
+            this.Close();
             
         }
 
